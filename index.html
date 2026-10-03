@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nemorix</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <button class="brand" id="newChat"><span class="logo">N</span><span>Nemorix</span></button>
+  <button class="new-chat" id="newChat2">+ محادثة جديدة</button>
+  <div class="section-title">المحادثات</div>
+  <div id="history" class="history"></div>
+  <div class="sidebar-bottom"><span>مساعد ذكي</span><span class="status-dot"></span></div>
+</aside>
+<main class="main">
+  <header class="topbar"><div class="title">Nemorix</div><div class="actions"><button id="searchToggle">بحث ويب</button><button id="clearChat">مسح</button></div></header>
+  <section id="messages" class="messages"><div class="welcome"><div class="welcome-logo">N</div><h1>إزاي أقدر أساعدك؟</h1><p>اسأل Nemorix عن أي موضوع، برمجة، بحث، تحليل، أو فكرة.</p></div></section>
+  <form id="composer" class="composer">
+    <textarea id="prompt" rows="1" placeholder="اكتب رسالتك هنا..."></textarea>
+    <div class="composer-row"><div class="quick"><button type="button" data-mode="search">بحث</button><button type="button" data-mode="code">كود</button><button type="button" data-mode="file">ملف</button></div><button class="send" id="send" type="submit">إرسال</button></div>
+  </form>
+  <div class="disclaimer">تحقق من المعلومات المهمة قبل الاعتماد عليها.</div>
+</main>
+</div>
+<script src="/assets/app.js"></script>
+</body>
+</html>
